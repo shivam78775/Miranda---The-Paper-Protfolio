@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background: #C5BDB3;
+    position: relative;
+}
+
+#nav{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid #222;
+}
+
+#nav img{
+    height: 27px;
+    width: 30%;
+}
+
+#nav h5{
+    font-size: 18px;
+    font-weight: 100;
+    width: 30%;
+}
+
+#nav i{
+    width: 30%;
+    text-align: right;
+}
+
+#elems{
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#elem1{
+    width: 30%;
+    height: 100%;
+}
+#elem2{
+    width: 25%;
+    height: 100%;
+    padding: 20px 60px;
+    text-align: center;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+}
+#elem3{
+    width: 30%;
+    height: 100%;
+}
+
+.img-div{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.img-div:hover img{
+    transform: scale(1.05);
+}
+
+#elems h4{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Canopee;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 48px;
+}
+
+#elems h4 span{
+    background: #CF240A;
+    margin: 0px 7px;
+    font-size: 22px;
+    color: #C5BDB3;
+    padding: 3px 4px;
+    border-radius: 4px;
+}
