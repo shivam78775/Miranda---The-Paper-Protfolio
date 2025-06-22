@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Editorial";
+    src: url(./Editorial.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,11 +14,17 @@ html, body{
     width: 100%;
 }
 
+#main{
+    background: #1D1D1B;
+    overflow-x: hidden;
+}
+
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: #C5BDB3;
     position: relative;
+    overflow: hidden;
 }
 
 #nav{
@@ -55,7 +66,7 @@ html, body{
     height: 100%;
 }
 #elem2{
-    width: 25%;
+    width: 30%;
     height: 100%;
     padding: 20px 60px;
     text-align: center;
@@ -86,8 +97,8 @@ html, body{
 
 #elems h4{
     font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 3px;
     font-family: Canopee;
     font-weight: 300;
     font-size: 30px;
@@ -96,9 +107,68 @@ html, body{
 
 #elems h4 span{
     background: #CF240A;
-    margin: 0px 7px;
+    margin: 0px 8px;
     font-size: 22px;
     color: #C5BDB3;
     padding: 3px 4px;
-    border-radius: 4px;
+    border-radius: 5px;
+}
+
+#elems p{
+    font-size: 22px;
+    font-family: Editorial;
+    font-weight: 500;
+    line-height: 29px;
+    color: #303030;
+}
+
+#elem2 h2{
+    font-family: Canopee;
+    font-size: 75px;
+    font-weight: 300;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+#elem2 h3{
+    font-family: Editorial;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 58px;
+}
+#elem2 h6{
+    font-family: Editorial;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 29px;
+    margin-top: 32px;
+}
+#elem2 h6 span{
+    font-weight: bold;
+}
+
+#b-text{
+    font-family: Canopee;
+    min-width: 90%;
+    letter-spacing: -25px;
+    font-size: 700px;
+    font-weight: 400;
+    background: #000;
+    color: #C5BDB3;
+    margin: 0px 30px;
+    text-align: center;
+    line-height: 641px;
+}
+
+#section2{
+   display: flex;
+   width: 100vw;
+}
+
+#section2 #left{
+    width: 30%;
+}
+
+#section2 #right{
+    width: 70%;
+    padding: 50px 60px;
 }
