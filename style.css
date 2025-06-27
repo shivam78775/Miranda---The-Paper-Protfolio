@@ -249,3 +249,31 @@ body {
   line-height: 127px;
   margin: 30px 0;
 }
+
+#page2{
+  position: relative;
+  background: #c5bdb3;
+  padding-bottom: 100px;
+}
+
+#page2 h1{
+  font-family: Canopee;
+  width: fit-content;
+  letter-spacing: -25px;
+  font-size: 570px;
+  font-weight: 400;
+  background: #000;
+  color: #c5bdb3;
+  margin-left: 2%;
+  padding: 8px 20px;
+  padding-right: 50px;
+  text-align: center;
+  line-height: 450px;
+}
+
+#page2 img{
+  position: absolute;
+  height: 500px;
+  top: -3%;
+  right: 2%;
+}

@@ -7,12 +7,12 @@ const scroll = new LocomotiveScroll({
 var tl = gsap.timeline()
 
 tl.to("#page1",{
-    y:"50vh",
+    y:"12vh",
     scale:0.4,
     duration:0
 })
 tl.to("#page1",{
-    y:"-50vh",
+    y:"-80vh",
     duration:1,
     delay:1
 })
