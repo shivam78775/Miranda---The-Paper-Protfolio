@@ -3,6 +3,16 @@
   src: url(./Editorial.ttf);
 }
 
+.paper-background{
+  position:absolute; inset:0;
+  z-index:999;                
+  background:url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/614f353c6059a3ea84fe5b5b_pt-texture-2.jpg")
+             center/auto;
+  mix-blend-mode:multiply;
+  pointer-events:none !important;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +23,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background: #ede2d6;
 }
 
 #main {
@@ -20,12 +31,22 @@ body {
   overflow-x: hidden;
 }
 
+
 #page1 {
   min-height: 100vh;
   width: 100vw;
-  background: #c5bdb3;
+  background: #ede2d6;
   position: relative;
   overflow: hidden;
+}
+#page1::before{
+  content:"";
+  position:absolute; inset:0;
+  background:url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/614f353f1e11a6a7afdd8b74_6059a3e2b9ae6d2bd508685c_pt-texture-2.jpg") center/auto;
+  mix-blend-mode:multiply;
+  opacity:0;
+  pointer-events:none; 
+  z-index:999;
 }
 
 #nav {
@@ -110,7 +131,7 @@ body {
   background: #cf240a;
   margin: 0px 8px;
   font-size: 22px;
-  color: #c5bdb3;
+  color: #ede2d6;
   padding: 3px 4px;
   border-radius: 5px;
 }
@@ -154,7 +175,7 @@ body {
   font-size: 700px;
   font-weight: 400;
   background: #000;
-  color: #c5bdb3;
+  color: #ede2d6;
   margin: 0px 30px;
   text-align: center;
   line-height: 641px;
@@ -227,7 +248,7 @@ body {
     line-height: 5vw;
     margin: .7vw 1vw 1vw 0vw;
     background-color: #1D1D1B;
-    color: #CDC6BE;
+    color: #ede2d6;
     padding: .75vw .4vw .5vw .5vw;            
 }
 
@@ -252,8 +273,17 @@ body {
 
 #page2{
   position: relative;
-  background: #c5bdb3;
+  background-color: #faeee0;
   padding-bottom: 100px;
+}
+#page2::before{
+  content:"";
+  position:absolute; inset:0;
+  background:url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/614f353f1e11a6a7afdd8b74_6059a3e2b9ae6d2bd508685c_pt-texture-2.jpg") center/auto;
+  mix-blend-mode:multiply;
+  opacity:.3;
+  pointer-events:none; 
+  z-index:999;
 }
 
 #page2 h1{
@@ -263,7 +293,7 @@ body {
   font-size: 570px;
   font-weight: 400;
   background: #000;
-  color: #c5bdb3;
+  color: #ede2d6;
   margin-left: 2%;
   padding: 8px 20px;
   padding-right: 50px;

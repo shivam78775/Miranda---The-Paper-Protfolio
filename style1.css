@@ -3,7 +3,16 @@
   width: 100%;
   height: 130vh; /* same tall look as reference */
   display: flex;
-  background: #c5bdb3;
+  background: #ede2d6;
+}
+#page3::before{
+  content:"";
+  position:absolute; inset:0;
+  background:url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/614f353f1e11a6a7afdd8b74_6059a3e2b9ae6d2bd508685c_pt-texture-2.jpg") center/auto;
+  mix-blend-mode:multiply;
+  opacity:.3;
+  pointer-events:none; 
+  z-index:999;
 }
 
 /* ============  LEFT COLUMN (GRID)  ============ */
@@ -129,6 +138,201 @@
   line-height: 1;
   padding-right: 8px;
   padding-top: 4px;
+}
+
+#section2-right p {
+  font-family: Editorial;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+#section2-right p.drop {
+  font-family: Editorial, serif;
+  font-size: 2.8rem;
+  line-height: 1;
+  color: #111;
+  max-width: 40rem;
+}
+#section2-right p.drops {
+  font-family: Editorial, serif;
+  font-size: 2.8rem;
+  line-height: 1;
+  color: #111;
+  max-width: 40rem;
+}
+
+#section2-right p.drop::first-letter {
+  font-family: "Canopee", sans-serif;
+  font-feature-settings: "ss03";
+  float: left;
+  font-size: 7vw;
+  line-height: 5vw;
+  margin: 0.7vw 1vw 1vw 0vw;
+  background-color: #1d1d1b;
+  color: #ede2d6;
+  padding: 0.75vw 0.4vw 0.5vw 0.5vw;
+}
+
+#section2-right #work {
+  margin-top: 60px;
+  border: 1px solid #3f3f3f;
+  border-radius: 50%;
+  width: 100%;
+  height: 230px;
+  background: #ede2d6;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#section2-right #work img {
+  height: 60px;
+  transform: translateX(-210px);
+  transition: transform 0.6s ease-in-out;
+}
+#section2-right #work h2 {
+  font-family: Canopee, serif;
+  font-size: 115px;
+  font-weight: 400;
+  line-height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-90px);
+  transition: transform 0.6s ease-in-out;
+}
+
+#section2-right #work:hover img {
+  transform: translateX(160px);
+}
+#section2-right #work:hover h2 {
+  transform: translateX(390px);
+}
+
+.mpg4 {
+  background: #ede2d6;
+  padding: 35px;
+}
+
+#page4 {
+  width: 100%;
+  min-height: 15vh;
+  background: #ede2d6;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+#page4::before{
+  content:"";
+  position:absolute; inset:0;
+  background:url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/614f353f1e11a6a7afdd8b74_6059a3e2b9ae6d2bd508685c_pt-texture-2.jpg") center/auto;
+  mix-blend-mode:multiply;
+  opacity:.3;
+  pointer-events:none; 
+  z-index:999;
+}
+
+.award-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  gap: 10px;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.site-title {
+  font-size: 30px;
+  width: 100%;
+  line-height: 38px;
+  font-family: Editorial, serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: -1px;
+
+  margin: 0;
+}
+
+.awards-text {
+  font-size: 92px;
+  font-weight: 400;
+  font-family: Canopee;
+  line-height: 96px;
+  align-items: center;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.number {
+  font-size: 200px;
+  line-height: 115px;
+  font-weight: 400;
+  font-family: serif;
+  display: flex;
+  align-items: center;
+}
+
+#page6 {
+  width: 100%;
+  min-height: 15vh;
+  background: #ede2d6;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  white-space: nowrap;
+  padding-top: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#page6::before{
+  content:"";
+  position:absolute; inset:0;
+  background:url("https://uploads-ssl.webflow.com/5f2429f172d117fcee10e819/614f353f1e11a6a7afdd8b74_6059a3e2b9ae6d2bd508685c_pt-texture-2.jpg") center/auto;
+  mix-blend-mode:multiply;
+  opacity:.3;
+  pointer-events:none; 
+  z-index:999;
+}
+#page6::-webkit-scrollbar {
+  display: none;
+}
+#page6 h2 {
+  font-size: 90px;
+  font-weight: 300;
+  font-family: Editorial, serif;
+  line-height: 115px;
+  display: inline-block;
+  margin-right: 20px;
+  animation-name: scroll;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#page6 h2 span {
+  background: #000;
+  color: #ede2d6;
+  font-family: Canopee;
+  padding: 0px 10px;
+}
+#page6:hover h2{
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 21px));
+  }
 }
 
 /* ============  SIMPLE RESPONSIVE  ============ */
